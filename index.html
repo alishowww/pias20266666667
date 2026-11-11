@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aprender junto</title>
+  <meta name="description" content="Conecta estudantes a materiais gratuitos, exercícios videoaulas e oportunidades de reforço escolar por meio de uma plataforma digital.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topo">
+  <div class="faixa">
+    <p class="marca">Aprender junto</p>
+    <nav>
+      <a href="#problema">O problema</a>
+      <a href="#solucao">A solucao</a>
+      <a href="#sustentar">Como se paga</a>
+      <a href="#cadastrar">Cadastrar</a>
+      <a href="#mural">Mural</a>
+    </nav>
+  </div>
+</header>
+
+<section class="capa">
+  <img src="imagens/capa.jpg" alt="TROQUE: descreva a foto de capa">
+  <div class="capa-texto">
+    <h1>Aprender junto transforma oportunidades em conhecimento</h1>
+    <p>Conecta estudantes a materiais gratuitos, exercícios videoaulas e oportunidades de reforço escolar por meio de uma plataforma digital.</p>
+    <a class="botao" href="#cadastrar">Cadastrar agora</a>
+  </div>
+</section>
+
+<main>
+
+<section id="problema" class="bloco">
+  <h2>O problema</h2>
+  <p class="largura-texto">Muitos estudantes enfrentam dificuldades de aprendizagem e não possuem condições financeiras para acessar aulas de reforço e materiais educativos.</p>
+  <p class="largura-texto"><b>Quem sofre com isso:</b> Estudantes de escolas publicas que precisam de apoio escolar e não têm acesso a recursos educacionais complementares.</p>
+  <p class="largura-texto"><b>Onde acontece:</b> nas escolas públicas e comunidades do nosso município, principalmente em regiões com menor acesso a recursos educacionais.</p>
+  <div class="galeria">
+    <figure>
+      <img src="imagens/foto1.jpg" alt="TROQUE: descreva a foto 1">
+      <figcaption>O aprendizado em grupo incentiva a troca de conhecimentos e a colaboração entre estudantes.</figcaption>
+    </figure>
+    <figure>
+      <img src="imagens/foto2.jpg" alt="TROQUE: descreva a foto 2">
+      <figcaption>Materiais educativos gratuitos ajudam a ampliar o acesso ao conhecimento.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="solucao" class="bloco">
+  <h2>A dor e a solucao</h2>
+  <p class="largura-texto">A dor descrita acima e atacada assim:</p>
+  <p class="largura-texto"><b>O que este site faz:</b> Conecta estudantes a materiais gratuitos, exercícios videoaulas e oportunidades de reforço escolar por meio de uma plataforma digital.</p>
+  <p class="largura-texto"><b>Quem vai usar:</b> Estudantes, professores voluntários, monitores e instituições de ensino interessadas em ampliar o acesso á educação.</p>
+  <p class="largura-texto"><b>O que muda para essa pessoa:</b> Porque terá acesso gratuito a conteúdos educativos, apoio nas matérias escolares e mais oportunidades de aprendizagem.</p>
+</section>
+
+<section id="sustentar" class="bloco">
+  <h2>Como o projeto se paga</h2>
+  <p class="largura-texto">O projeto se mantém por meio de parcerias com empresas e instituições de ensino, que patrocinam a plataforma em troca de divulgação. Assim, os estudantes continuam tendo acesso gratuito aos conteúdos e materiais educativos.</p>
+  <p class="largura-texto"><b>Quem mantem depois da entrega:</b> O projeto poderá continuar por meio de parcerias com escolas, universidades e empresas locais , que poderão contribuir financeiramente para manter a plataforma gratuita e acessível.</p>
+</section>
+
+<section class="bloco">
+  <h2>Os numeros do projeto</h2>
+  <p class="largura-texto">Indicador: número de ações cadastradas por moradores diferentes em 4 semanas</p>
+  <div class="painel" id="painel"></div>
+</section>
+
+<section id="cadastrar" class="bloco">
+  <h2>Registrar</h2>
+  <form id="formulario" class="formulario">
+    <div class="campo">
+      <label for="promocaoDeEducacaoDeQual">Promoção de educação de qualidade.</label>
+      <input type="text" id="promocaoDeEducacaoDeQual" maxlength="80" required>
+    </div>
+    <div class="campo">
+      <label for="educacao">Educação </label>
+      <select id="educacao" required>
+        <option>Ambiental</option>
+        <option>Social</option>
+        <option>Educação</option>
+        <option>Saúde</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="escolaComunidadeLocal">Escola, comunidade local</label>
+      <input type="text" id="escolaComunidadeLocal" maxlength="80" required>
+    </div>
+    <div class="campo">
+      <label for="4">4</label>
+      <input type="number" id="4" min="0" step="1" required>
+    </div>
+    <div class="campo largo">
+      <label for="criacaoDeUmSiteEducativo">Criação de um site educativo</label>
+      <textarea id="criacaoDeUmSiteEducativo" rows="3" maxlength="300" required></textarea>
+    </div>
+    <button type="submit" class="botao">Salvar</button>
+    <p id="aviso" class="aviso" role="status"></p>
+  </form>
+</section>
+
+<section id="mural" class="bloco">
+  <h2>Mural</h2>
+  <div class="ferramentas">
+    <div class="ferramenta">
+      <label for="busca">Buscar</label>
+      <input type="text" id="busca" placeholder="digite uma palavra">
+    </div>
+    <div class="ferramenta">
+      <label for="filtro">Educação </label>
+      <select id="filtro">
+        <option value="todas">Todas</option>
+        <option>Ambiental</option>
+        <option>Social</option>
+        <option>Educação</option>
+        <option>Saúde</option>
+      </select>
+    </div>
+    <div class="ferramenta">
+      <label for="exportar">Dados</label>
+      <div class="grupo-botoes">
+        <button type="button" id="exportar" class="botao-fino">Baixar</button>
+        <label for="importar" class="botao-fino">Carregar</label>
+        <input type="file" id="importar" accept="application/json" hidden>
+        <button type="button" id="limpar" class="botao-fino perigo">Apagar tudo</button>
+      </div>
+    </div>
+  </div>
+  <div id="lista" class="lista"></div>
+</section>
+
+</main>
+
+<footer class="rodape">
+  <p>Alison, Manuela, Ana Julia, Adryan, 3A-NEM, Tarquinio Santos e 2026.</p>
+  <p class="miudo">ODS 4 (Educação de qualidade) e ODS 10 (Redução das desigualdades). Os dados ficam salvos apenas neste navegador. Protótipo escolar.</p>
+  <p class="miudo">Conteúdos educativos e ações cadastradas pelos participantes do projeto.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
